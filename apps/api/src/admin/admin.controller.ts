@@ -42,4 +42,4 @@ export class AdminController {
   convertToRescue(@Param("id") id: string, @CurrentUser() user: AuthenticatedUser) {
     return this.adminService.convertToRescue(id, user);
   }
-}
+} 
