@@ -1,0 +1,160 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "PetRadar Your pet community" [ref=e4] [cursor=pointer]:
+        - /url: /map
+        - img [ref=e6]
+        - generic [ref=e11]:
+          - generic [ref=e12]: PetRadar
+          - generic [ref=e13]: Your pet community
+      - navigation "PetRadar navigation" [ref=e14]:
+        - link "Map" [ref=e15] [cursor=pointer]:
+          - /url: /map
+        - link "Lost Pets" [ref=e16] [cursor=pointer]:
+          - /url: /lost-pets
+        - link "My Pets" [ref=e17] [cursor=pointer]:
+          - /url: /pets
+        - link "Matches 3" [ref=e18] [cursor=pointer]:
+          - /url: /matches
+          - text: Matches
+          - generic [ref=e19]: "3"
+      - generic [ref=e20]:
+        - link "Report Animal" [ref=e21] [cursor=pointer]:
+          - /url: /report
+          - img [ref=e22]
+          - text: Report Animal
+        - link "View notifications" [ref=e23] [cursor=pointer]:
+          - /url: /notifications
+          - img [ref=e24]
+          - generic [ref=e27]: "3"
+        - button "Open profile menu" [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]: "N"
+          - generic [ref=e31]: Nicha P.
+          - img [ref=e32]
+    - main [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - img [ref=e40]
+                - text: Lost pet listings
+              - heading "Lost Pets" [level=1] [ref=e42]
+              - paragraph [ref=e43]: Browse community reports and review possible matches. Photos, locations, and timing are grouped to make each listing easy to scan.
+            - link "Post Lost Pet" [ref=e44] [cursor=pointer]:
+              - /url: /lost-pets/new
+              - img [ref=e45]
+              - text: Post Lost Pet
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - img [ref=e48]
+              - textbox [ref=e51]:
+                - /placeholder: Search name, color, breed, area...
+            - generic [ref=e52]:
+              - button "All animals" [ref=e53] [cursor=pointer]:
+                - img [ref=e54]
+                - text: All animals
+              - button "Cats" [ref=e60] [cursor=pointer]:
+                - img [ref=e61]
+                - text: Cats
+              - button "Dogs" [ref=e68] [cursor=pointer]:
+                - img [ref=e69]
+                - text: Dogs
+              - button "All posts" [ref=e76] [cursor=pointer]
+              - button "Still missing" [ref=e77] [cursor=pointer]
+              - button "Found" [ref=e78] [cursor=pointer]
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: 3 listings shown · 2 still missing
+          - link "View possible matches" [ref=e81] [cursor=pointer]:
+            - /url: /matches
+            - img [ref=e82]
+            - text: View possible matches
+        - generic [ref=e86]:
+          - article [ref=e87]:
+            - link "Milo ACTIVE 2 possible matches" [ref=e88] [cursor=pointer]:
+              - /url: /lost-pets/LP-00001
+              - generic [ref=e89]:
+                - img "Milo" [ref=e90]
+                - generic [ref=e92]: ACTIVE
+                - generic [ref=e93]: 2 possible matches
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]:
+                  - link "Milo" [ref=e97] [cursor=pointer]:
+                    - /url: /lost-pets/LP-00001
+                    - heading "Milo" [level=2] [ref=e98]
+                  - generic [ref=e99]: LP-00001
+                - paragraph [ref=e100]: Cat · Orange tabby · Tabby stripes, white chest
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - img [ref=e103]
+                  - generic [ref=e106]: Ari
+                - generic [ref=e107]:
+                  - img [ref=e108]
+                  - generic [ref=e112]: 3 days ago
+              - paragraph [ref=e113]: Milo escaped through an open window on June 24. He is neutered, microchipped, and very friendly. He loves people and will approach if you call his name.
+              - generic [ref=e114]:
+                - link "View details" [ref=e115] [cursor=pointer]:
+                  - /url: /lost-pets/LP-00001
+                - link "Matches" [ref=e116] [cursor=pointer]:
+                  - /url: /matches
+                  - img [ref=e117]
+                  - text: Matches
+          - article [ref=e121]:
+            - link "Luna ACTIVE 1 possible match" [ref=e122] [cursor=pointer]:
+              - /url: /lost-pets/LP-00002
+              - generic [ref=e123]:
+                - img "Luna" [ref=e124]
+                - generic [ref=e126]: ACTIVE
+                - generic [ref=e127]: 1 possible match
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - generic [ref=e130]:
+                  - link "Luna" [ref=e131] [cursor=pointer]:
+                    - /url: /lost-pets/LP-00002
+                    - heading "Luna" [level=2] [ref=e132]
+                  - generic [ref=e133]: LP-00002
+                - paragraph [ref=e134]: Dog · Golden · Solid
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - img [ref=e137]
+                  - generic [ref=e140]: Chatuchak
+                - generic [ref=e141]:
+                  - img [ref=e142]
+                  - generic [ref=e146]: 2 days ago
+              - paragraph [ref=e147]: Luna is a 2-year-old golden retriever. She got out during a thunderstorm on June 25. She is gentle, vaccinated, and responds to her name. She has a microchip.
+              - generic [ref=e148]:
+                - link "View details" [ref=e149] [cursor=pointer]:
+                  - /url: /lost-pets/LP-00002
+                - link "Matches" [ref=e150] [cursor=pointer]:
+                  - /url: /matches
+                  - img [ref=e151]
+                  - text: Matches
+          - article [ref=e155]:
+            - link "FOUND" [ref=e156] [cursor=pointer]:
+              - /url: /lost-pets/LP-00003
+              - generic [ref=e157]:
+                - img [ref=e159]
+                - generic [ref=e167]: FOUND
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - link "Simba" [ref=e171] [cursor=pointer]:
+                    - /url: /lost-pets/LP-00003
+                    - heading "Simba" [level=2] [ref=e172]
+                  - generic [ref=e173]: LP-00003
+                - paragraph [ref=e174]: Cat · Black and white · Tuxedo
+              - generic [ref=e175]:
+                - generic [ref=e176]:
+                  - img [ref=e177]
+                  - generic [ref=e180]: Victory Monument
+                - generic [ref=e181]:
+                  - img [ref=e182]
+                  - generic [ref=e186]: 7 days ago
+              - paragraph [ref=e187]: Simba is a tuxedo cat who went missing near Victory Monument. He was found and reunited with his owner after a community effort.
+              - generic [ref=e188]:
+                - link "View details" [ref=e189] [cursor=pointer]:
+                  - /url: /lost-pets/LP-00003
+                - link "Map" [ref=e190] [cursor=pointer]:
+                  - /url: /map
+  - alert [ref=e191]

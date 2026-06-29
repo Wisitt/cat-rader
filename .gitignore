@@ -1,0 +1,11 @@
+node_modules
+.turbo
+**/.turbo
+.next
+**/.next
+.angular
+dist
+.DS_Store
+.env
+config.env
+main

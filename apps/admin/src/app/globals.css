@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-text-strong font-sans antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(15, 118, 110, 0.06), transparent 28rem),
+      linear-gradient(180deg, #fbfcfa 0%, #f8faf7 34rem);
+  }
+}
+
+@layer utilities {
+  .admin-shell {
+    @apply mx-auto w-full max-w-[1600px] p-4 sm:p-5 lg:p-6;
+  }
+
+  .field {
+    @apply h-10 w-full rounded-xl border border-input bg-white px-3 text-sm text-text-strong shadow-inner-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10 placeholder:text-text-muted/70;
+  }
+
+  .chip {
+    @apply inline-flex h-9 shrink-0 items-center justify-center gap-1.5 rounded-xl border border-border bg-white px-3 text-xs font-bold text-text-muted shadow-inner-sm transition hover:border-primary/30 hover:text-primary;
+  }
+}

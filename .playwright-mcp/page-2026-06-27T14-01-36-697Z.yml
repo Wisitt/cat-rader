@@ -1,0 +1,27 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "PetRadar Reuniting pets safely" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+      - generic [ref=e11]:
+        - generic [ref=e12]: PetRadar
+        - generic [ref=e13]: Reuniting pets safely
+    - navigation "PetRadar navigation" [ref=e14]:
+      - link "Map" [ref=e15] [cursor=pointer]:
+        - /url: /map
+      - link "Report" [ref=e16] [cursor=pointer]:
+        - /url: /report
+      - link "Lost Pets" [ref=e17] [cursor=pointer]:
+        - /url: /lost-pets
+      - link "Pet Passport" [ref=e18] [cursor=pointer]:
+        - /url: /#pet-passport
+      - link "Rescues" [ref=e19] [cursor=pointer]:
+        - /url: /volunteer
+      - link "Safety" [ref=e20] [cursor=pointer]:
+        - /url: /safety
+      - link "Help Center" [ref=e21] [cursor=pointer]:
+        - /url: /help
+      - link "About" [ref=e22] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e23]:
+    - generic [ref=e25]: Checking access...

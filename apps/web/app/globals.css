@@ -1,0 +1,204 @@
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F8FAF7;
+    --foreground: #142733;
+    --card: #FFFFFF;
+    --card-foreground: #142733;
+    --popover: #FFFFFF;
+    --popover-foreground: #142733;
+    --primary: #0F766E;
+    --primary-foreground: #FFFFFF;
+    --secondary: #F6F3EE;
+    --secondary-foreground: #142733;
+    --muted: #F6F3EE;
+    --muted-foreground: #687280;
+    --accent: #E4F5EF;
+    --accent-foreground: #075E66;
+    --destructive: #EF4444;
+    --border: #DFE8E5;
+    --input: #D8E4E0;
+    --ring: #0F766E;
+    --radius: 0.875rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-text-strong font-sans antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 30rem),
+      linear-gradient(180deg, #fbfcfa 0%, #f8faf7 32rem);
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .page-shell {
+    @apply mx-auto w-full max-w-[1500px] p-4 sm:p-5 lg:p-6;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-border/80 bg-surface shadow-soft;
+  }
+
+  .field {
+    @apply h-10 w-full rounded-xl border border-input bg-white px-3 text-sm text-text-strong shadow-inner-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10 placeholder:text-text-muted/70;
+  }
+
+  .chip {
+    @apply inline-flex h-8 shrink-0 items-center justify-center gap-1.5 rounded-full border border-border bg-white px-3 text-xs font-semibold text-text-muted shadow-inner-sm transition hover:border-primary/30 hover:text-primary;
+  }
+}
+
+/* Leaflet map fix */
+.leaflet-container {
+  z-index: 1;
+  font-family: inherit;
+  background: #eef4ef;
+}
+
+/* PetRadar map pins */
+.petradar-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.petradar-pin-cat { background: #0F766E; }
+.petradar-pin-dog { background: #3B82F6; }
+.petradar-pin-other { background: #9CA3AF; }
+.petradar-pin-emergency { background: #EF4444; animation: pulse 1.5s infinite; }
+.petradar-pin-injured { background: #F59E0B; }
+.petradar-pin-lost { background: #8B5CF6; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.1); }
+}
+
+@keyframes petradar-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.38), 0 12px 28px rgba(20, 39, 51, 0.16); }
+  50% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0), 0 12px 28px rgba(20, 39, 51, 0.16); }
+}
+
+@keyframes petradar-ring {
+  0% { transform: scale(0.6); opacity: 0.8; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Landing page product visuals */
+.landing-map {
+  background-color: #eef3ed;
+  background-image:
+    linear-gradient(rgba(15, 118, 110, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 118, 110, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.75) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.75) 2px, transparent 2px);
+  background-size: 28px 28px, 28px 28px, 84px 84px, 84px 84px;
+}
+
+.landing-route {
+  position: absolute;
+  height: 3px;
+  border-radius: 999px;
+  background: #56c8cf;
+  transform-origin: left center;
+  opacity: 0.85;
+}
+
+.landing-route-one {
+  left: 8%;
+  top: 58%;
+  width: 72%;
+  transform: rotate(-14deg);
+}
+
+.landing-route-two {
+  left: 30%;
+  top: 24%;
+  width: 60%;
+  transform: rotate(26deg);
+}
+
+.landing-pin {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 50% 50% 50% 0;
+  color: white;
+  box-shadow: 0 8px 18px rgba(20, 39, 51, 0.18);
+  transform: rotate(-45deg);
+}
+
+.landing-pin svg {
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+
+.landing-cta-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+  background-size: 48px 48px;
+  transform: rotate(-8deg) scale(1.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .pet-tag-print,
+  .pet-tag-print * {
+    visibility: visible;
+  }
+
+  .pet-tag-print {
+    position: fixed;
+    inset: 24px;
+    box-shadow: none !important;
+  }
+}

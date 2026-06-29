@@ -1,0 +1,57 @@
+import type { Notification } from "@/types";
+
+export const mockNotifications: Notification[] = [
+  {
+    id: "N-001",
+    type: "MATCH_FOUND",
+    title: "High-confidence match found",
+    body: "Milo (91% match) — a sighting near Ari closely matches your lost pet profile.",
+    isRead: false,
+    createdAt: "2026-06-26T09:00:00Z",
+    link: "/matches",
+  },
+  {
+    id: "N-002",
+    type: "RESCUE_UPDATE",
+    title: "Rescue case updated",
+    body: "RC-001 — Tuxedo cat at Victory Monument is now IN_PROGRESS. Nicha P. is on the way.",
+    isRead: false,
+    createdAt: "2026-06-26T07:45:00Z",
+    link: "/rescue-cases/RC-001",
+  },
+  {
+    id: "N-003",
+    type: "SIGHTING_NEAR",
+    title: "New sighting in your area",
+    body: "A golden dog was spotted near Chatuchak. Could be a match for Luna.",
+    isRead: false,
+    createdAt: "2026-06-26T10:20:00Z",
+    link: "/map",
+  },
+  {
+    id: "N-004",
+    type: "STATUS_CHANGE",
+    title: "Sighting verified",
+    body: "SGT-00005 — Gray cat in Ratchada has been verified by a trusted reporter.",
+    isRead: true,
+    createdAt: "2026-06-25T14:30:00Z",
+    link: "/sightings/SGT-00005",
+  },
+  {
+    id: "N-005",
+    type: "MATCH_FOUND",
+    title: "New match for Luna",
+    body: "Luna (78% match) — A golden dog near Chatuchak matches Luna's profile.",
+    isRead: true,
+    createdAt: "2026-06-26T10:30:00Z",
+    link: "/matches",
+  },
+  {
+    id: "N-006",
+    type: "SYSTEM",
+    title: "Welcome to PetRadar",
+    body: "Thank you for joining the PetRadar community. Start by reporting a sighting or registering a lost pet.",
+    isRead: true,
+    createdAt: "2026-06-01T00:00:00Z",
+  },
+];

@@ -1,0 +1,43 @@
+[     513ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/Users/wsmd/wisit/cat-maps/apps/web/.angular/cache/18.2.21/web/vite/deps/chunk-37AFHX54.js?v=3bb0209d:19325
+[   68000ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/Users/wsmd/wisit/cat-maps/apps/web/.angular/cache/18.2.21/web/vite/deps/chunk-37AFHX54.js?v=3bb0209d:19325
+[ 1232344ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4200/@vite/client:553
+[ 1232386ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1233390ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1234399ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1235404ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1236409ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1237415ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1238419ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1239423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1240429ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1241434ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1242438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1243440ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1244443ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/:0
+[ 1245920ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[ 1251831ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1252381ms] [LOG] [Fast Refresh] done in 551ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1252387ms] [LOG] [Fast Refresh] done in 556ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1260411ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1260555ms] [LOG] [Fast Refresh] done in 143ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1265752ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1265858ms] [LOG] [Fast Refresh] done in 106ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1267200ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1267302ms] [LOG] [Fast Refresh] done in 102ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1272230ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1272325ms] [LOG] [Fast Refresh] done in 96ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1276477ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1278240ms] [LOG] [Fast Refresh] done in 1763ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1286625ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1286981ms] [LOG] [Fast Refresh] done in 357ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1295572ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1295755ms] [LOG] [Fast Refresh] done in 182ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1300506ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1300718ms] [LOG] [Fast Refresh] done in 213ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1305285ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1305468ms] [LOG] [Fast Refresh] done in 182ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1316429ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1316919ms] [LOG] [Fast Refresh] done in 490ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1339641ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1339891ms] [LOG] [Fast Refresh] done in 251ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[ 1340024ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/register:0

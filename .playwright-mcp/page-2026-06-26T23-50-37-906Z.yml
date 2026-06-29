@@ -1,0 +1,549 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "PetRadar home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]:
+          - img [ref=e8]
+          - generic [ref=e14]: PetRadar
+      - navigation "Main navigation" [ref=e15]:
+        - link "Map" [ref=e16] [cursor=pointer]:
+          - /url: /map
+        - link "Lost Pets" [ref=e17] [cursor=pointer]:
+          - /url: /lost-pets
+        - link "Pet Passport" [ref=e18] [cursor=pointer]:
+          - /url: /pets
+        - link "Rescues" [ref=e19] [cursor=pointer]:
+          - /url: /volunteer
+        - link "Safety" [ref=e20] [cursor=pointer]:
+          - /url: "#safety"
+        - link "Help Center" [ref=e21] [cursor=pointer]:
+          - /url: /safety
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: "#community"
+      - generic [ref=e23]:
+        - link "Log in" [ref=e24] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e25] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - img "A pet owner caring for her dog at home" [ref=e29]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - img [ref=e34]
+            - text: Trusted by a caring community
+          - heading "A trusted place for pet safety, rescue, and reunion." [level=1] [ref=e37]
+          - paragraph [ref=e38]: Report animal sightings, search lost pets, get possible match suggestions, support rescues, and protect your pet's identity in one safe community.
+          - generic [ref=e39]:
+            - link "Report an Animal" [ref=e40] [cursor=pointer]:
+              - /url: /report
+              - img
+              - text: Report an Animal
+            - link "Search Lost Pets" [ref=e41] [cursor=pointer]:
+              - /url: /lost-pets
+              - img
+              - text: Search Lost Pets
+            - link "Explore the Map" [ref=e42] [cursor=pointer]:
+              - /url: /map
+              - text: Explore the Map
+              - img
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - text: Protected locations
+            - generic [ref=e48]:
+              - img [ref=e50]
+              - text: Community reports
+            - generic [ref=e55]:
+              - img [ref=e57]
+              - text: Match alerts
+            - generic [ref=e60]:
+              - img [ref=e62]
+              - text: Rescue support
+            - generic [ref=e64]:
+              - img [ref=e66]
+              - text: QR pet profile
+            - generic [ref=e72]:
+              - img [ref=e74]
+              - text: Health records
+        - generic [ref=e78]:
+          - strong [ref=e79]: 50,000+ members
+          - text: helping pets across their communities
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - img "Milo, an orange cat" [ref=e83]
+          - generic [ref=e84]:
+            - text: Lost pet
+            - paragraph [ref=e85]: Milo
+            - paragraph [ref=e86]: Cat · Male · 2 years
+            - paragraph [ref=e87]: Phaya Thai, Bangkok
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - img [ref=e90]
+            - text: Possible matches
+          - generic [ref=e93]: 86%
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - img [ref=e97]
+          - text: Possible match
+        - generic [ref=e101]:
+          - paragraph [ref=e102]: 86%
+          - paragraph [ref=e103]: High confidence
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - img [ref=e108]
+          - text: Pet Passport
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - paragraph [ref=e114]: Milo
+            - paragraph [ref=e115]: CAT-00021
+          - generic [ref=e116]: Verified
+        - img [ref=e118]
+      - generic [ref=e125]:
+        - img [ref=e127]
+        - generic [ref=e130]:
+          - paragraph [ref=e131]: Privacy-protected location
+          - paragraph [ref=e132]: Exact location stays hidden to keep pets and people safe.
+    - region "PetRadar impact" [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - img [ref=e137]
+          - generic [ref=e140]:
+            - paragraph [ref=e141]: 24,860
+            - paragraph [ref=e142]: Sightings reported
+            - paragraph [ref=e143]: 16% this month
+        - generic [ref=e144]:
+          - img [ref=e146]
+          - generic [ref=e148]:
+            - paragraph [ref=e149]: 5,312
+            - paragraph [ref=e150]: Lost pets reunited
+            - paragraph [ref=e151]: 28% this month
+        - generic [ref=e152]:
+          - img [ref=e154]
+          - generic [ref=e159]:
+            - paragraph [ref=e160]: 1,286
+            - paragraph [ref=e161]: Rescue cases supported
+            - paragraph [ref=e162]: 19% this month
+        - generic [ref=e163]:
+          - img [ref=e165]
+          - generic [ref=e168]:
+            - paragraph [ref=e169]: 18,940
+            - paragraph [ref=e170]: Privacy-protected cases
+            - paragraph [ref=e171]: 42% this month
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - paragraph [ref=e175]: Simple, safe, community-powered
+        - heading "How PetRadar works" [level=2] [ref=e176]
+        - paragraph [ref=e177]: A clear path from the first report to a safe reunion, with privacy built into every step.
+      - generic [ref=e178]:
+        - article [ref=e179]:
+          - generic [ref=e180]:
+            - img [ref=e182]
+            - generic [ref=e185]: "01"
+          - heading "Report a sighting" [level=3] [ref=e186]
+          - paragraph [ref=e187]: Share a photo, condition, and an approximate location.
+        - article [ref=e188]:
+          - generic [ref=e189]:
+            - img [ref=e191]
+            - generic [ref=e194]: "02"
+          - heading "Search or post a lost pet" [level=3] [ref=e195]
+          - paragraph [ref=e196]: Browse nearby reports or create a profile for your missing pet.
+        - article [ref=e197]:
+          - generic [ref=e198]:
+            - img [ref=e200]
+            - generic [ref=e203]: "03"
+          - heading "Get possible match suggestions" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Review clear match reasons based on appearance, place, and time.
+        - article [ref=e206]:
+          - generic [ref=e207]:
+            - img [ref=e209]
+            - generic [ref=e211]: "04"
+          - heading "Help reunite safely" [level=3] [ref=e212]
+          - paragraph [ref=e213]: Connect through protected contact and trusted community support.
+    - generic [ref=e215]:
+      - generic [ref=e216]:
+        - paragraph [ref=e217]: One connected place
+        - heading "Core tools for everyday pet safety" [level=2] [ref=e218]
+        - paragraph [ref=e219]: Useful when a pet is missing, when an animal needs help, and for the care that happens in between.
+      - generic [ref=e220]:
+        - article [ref=e221]:
+          - img [ref=e223]
+          - heading "Community Map" [level=3] [ref=e225]
+          - paragraph [ref=e226]: See recent sightings, lost pets, and rescue needs near you.
+        - article [ref=e227]:
+          - img [ref=e229]
+          - heading "Lost Pet Search" [level=3] [ref=e232]
+          - paragraph [ref=e233]: Search by pet, appearance, area, or last-seen details.
+        - article [ref=e234]:
+          - img [ref=e236]
+          - heading "Possible Match Alerts" [level=3] [ref=e241]
+          - paragraph [ref=e242]: Get notified when a community sighting may match your pet.
+        - article [ref=e243]:
+          - img [ref=e245]
+          - heading "Rescue Support" [level=3] [ref=e247]
+          - paragraph [ref=e248]: Connect verified volunteers and rescue partners to urgent cases.
+        - article [ref=e249]:
+          - img [ref=e251]
+          - heading "Pet Passport" [level=3] [ref=e255]
+          - paragraph [ref=e256]: Keep identity, microchip, health, and owner details together.
+        - article [ref=e257]:
+          - img [ref=e259]
+          - heading "Vaccination Book" [level=3] [ref=e266]
+          - paragraph [ref=e267]: Store vaccine records and see upcoming care reminders.
+        - article [ref=e268]:
+          - img [ref=e270]
+          - heading "QR Pet Profile" [level=3] [ref=e276]
+          - paragraph [ref=e277]: Share a protected pet profile that is quick to scan and update.
+        - article [ref=e278]:
+          - img [ref=e280]
+          - heading "Protected Contact" [level=3] [ref=e283]
+          - paragraph [ref=e284]: Keep personal details private while the community helps.
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - paragraph [ref=e288]: Product preview
+        - heading "See PetRadar in action" [level=2] [ref=e289]
+        - paragraph [ref=e290]: Every part of the experience is designed to be clear when people need to act quickly.
+      - generic [ref=e291]:
+        - article [ref=e292]:
+          - generic [ref=e294]:
+            - img [ref=e298]
+            - img [ref=e304]
+            - img [ref=e307]
+            - img [ref=e311]
+            - generic [ref=e316]: Approximate area
+          - paragraph [ref=e317]: Live Map
+        - article [ref=e318]:
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e322]:
+                - paragraph [ref=e323]: Milo
+                - paragraph [ref=e324]: Last seen near Ari, Bangkok
+              - img [ref=e325]
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - paragraph [ref=e329]: Luna
+                - paragraph [ref=e330]: Last seen near Ari, Bangkok
+              - img [ref=e331]
+          - paragraph [ref=e333]: Lost Pets
+        - article [ref=e334]:
+          - generic [ref=e337]: 86%
+          - paragraph [ref=e338]: Possible Matches
+        - article [ref=e339]:
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - paragraph [ref=e344]: Milo
+              - generic [ref=e345]: Verified
+            - paragraph [ref=e346]: CAT-00021
+            - generic [ref=e347]:
+              - img [ref=e348]
+              - text: QR profile ready
+          - paragraph [ref=e354]: Pet Passport
+        - article [ref=e355]:
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - img [ref=e359]
+              - generic [ref=e362]: Vaccine status
+              - generic [ref=e363]: Up to date
+            - generic [ref=e364]:
+              - img [ref=e365]
+              - generic [ref=e372]: Next vaccination
+              - generic [ref=e373]: May 8, 2026
+            - generic [ref=e374]:
+              - img [ref=e375]
+              - generic [ref=e379]: Health profile
+              - generic [ref=e380]: Complete
+          - paragraph [ref=e381]: Vaccination & Health
+    - generic [ref=e383]:
+      - generic [ref=e384]:
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - paragraph [ref=e387]: Pet Passport
+            - paragraph [ref=e388]: Milo
+            - paragraph [ref=e389]: CAT-00021
+          - generic [ref=e390]: Verified
+        - generic [ref=e391]:
+          - img "Milo's pet passport photo" [ref=e392]
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - generic [ref=e395]:
+                - term [ref=e396]: Breed
+                - definition [ref=e397]: Domestic Shorthair
+              - generic [ref=e398]:
+                - term [ref=e399]: Microchip
+                - definition [ref=e400]: Registered
+              - generic [ref=e401]:
+                - term [ref=e402]: Vaccines
+                - definition [ref=e403]: Up to date
+            - generic [ref=e404]:
+              - img [ref=e405]
+              - generic [ref=e411]: Scan to open Milo's protected profile
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - paragraph [ref=e414]: Pet identity & health
+          - heading "Your pet's essential details, ready when they matter" [level=2] [ref=e415]
+          - paragraph [ref=e416]: Pet Passport gives owners one protected place for identity, health, and recovery information.
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - img [ref=e420]
+            - text: Store identity and microchip details
+          - generic [ref=e422]:
+            - img [ref=e424]
+            - text: Track vaccination records
+          - generic [ref=e426]:
+            - img [ref=e428]
+            - text: Share a protected QR profile
+          - generic [ref=e430]:
+            - img [ref=e432]
+            - text: Report your pet as lost quickly
+          - generic [ref=e434]:
+            - img [ref=e436]
+            - text: Keep owner contact private
+          - generic [ref=e438]:
+            - img [ref=e440]
+            - text: Improve possible match accuracy
+        - link "Create Pet Passport" [ref=e442] [cursor=pointer]:
+          - /url: /pets/new
+          - text: Create Pet Passport
+          - img
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - generic [ref=e446]:
+          - paragraph [ref=e447]: Safety by design
+          - heading "Share enough to help, never more than needed" [level=2] [ref=e448]
+          - paragraph [ref=e449]: PetRadar protects exact locations and personal details while keeping every case useful to the community.
+        - generic [ref=e450]:
+          - generic [ref=e451]:
+            - img [ref=e453]
+            - generic [ref=e456]:
+              - heading "Approximate location only" [level=3] [ref=e457]
+              - paragraph [ref=e458]: Public viewers see a helpful area, not an exact address.
+          - generic [ref=e459]:
+            - img [ref=e461]
+            - generic [ref=e464]:
+              - heading "Private owner details" [level=3] [ref=e465]
+              - paragraph [ref=e466]: You control what is shared and when.
+          - generic [ref=e467]:
+            - img [ref=e469]
+            - generic [ref=e471]:
+              - heading "Safe in-app communication" [level=3] [ref=e472]
+              - paragraph [ref=e473]: Connect without exposing personal contact details.
+          - generic [ref=e474]:
+            - img [ref=e476]
+            - generic [ref=e479]:
+              - heading "Built for community safety" [level=3] [ref=e480]
+              - paragraph [ref=e481]: Moderation, reporting, and trusted roles support every case.
+        - link "Read our safety approach" [ref=e482] [cursor=pointer]:
+          - /url: /safety
+          - text: Read our safety approach
+          - img
+      - generic [ref=e483]:
+        - generic [ref=e484]:
+          - img [ref=e488]
+          - img [ref=e494]
+          - img [ref=e497]
+          - img [ref=e501]
+          - generic [ref=e506]: Approximate area
+        - img [ref=e509]
+        - generic [ref=e514]:
+          - paragraph [ref=e515]: Approximate location radius
+          - paragraph [ref=e516]: About 1 km
+          - paragraph [ref=e517]: Exact coordinates remain protected.
+    - generic [ref=e519]:
+      - generic [ref=e520]:
+        - paragraph [ref=e521]: Lost pet matching
+        - heading "Clear evidence for a more confident reunion" [level=2] [ref=e522]
+        - paragraph [ref=e523]: PetRadar organizes the sighting details and explains why a possible match was suggested.
+      - generic [ref=e524]:
+        - generic [ref=e525]:
+          - article [ref=e526]:
+            - paragraph [ref=e527]: Lost pet · Milo
+            - img "Lost pet Milo" [ref=e528]
+            - paragraph [ref=e529]: Orange tabby · Red collar
+            - paragraph [ref=e530]: Last seen in Phaya Thai
+          - generic [ref=e531]:
+            - generic [ref=e532]: 86%
+            - paragraph [ref=e533]: High confidence
+            - paragraph [ref=e534]: Possible match
+          - article [ref=e535]:
+            - paragraph [ref=e536]: Community sighting
+            - img "Similar cat sighting" [ref=e537]
+            - paragraph [ref=e538]: Seen near Ari
+            - paragraph [ref=e539]: 0.8 km away · 2 hours ago
+          - article [ref=e540]:
+            - paragraph [ref=e541]: Why this may be a match
+            - list [ref=e542]:
+              - listitem [ref=e543]:
+                - img [ref=e544]
+                - text: Same species and breed
+              - listitem [ref=e547]:
+                - img [ref=e548]
+                - text: Similar orange coat pattern
+              - listitem [ref=e551]:
+                - img [ref=e552]
+                - text: Wearing a red collar
+              - listitem [ref=e555]:
+                - img [ref=e556]
+                - text: Seen near the last location
+            - generic [ref=e559]:
+              - link "Review Possible Match" [ref=e560] [cursor=pointer]:
+                - /url: /matches
+              - link "View Lost Pets" [ref=e561] [cursor=pointer]:
+                - /url: /lost-pets
+        - generic [ref=e562]:
+          - generic [ref=e563]:
+            - generic [ref=e564]: "1"
+            - text: Post a lost pet
+          - generic [ref=e565]:
+            - generic [ref=e566]: "2"
+            - text: Compare nearby sightings
+          - generic [ref=e567]:
+            - generic [ref=e568]: "3"
+            - text: Review possible matches
+          - generic [ref=e569]:
+            - generic [ref=e570]: "4"
+            - text: Coordinate a safe reunion
+    - generic [ref=e573]:
+      - generic [ref=e574]:
+        - paragraph [ref=e575]: People make it possible
+        - heading "Built for pet owners, neighbors, and helpers" [level=2] [ref=e576]
+        - paragraph [ref=e577]: Technology organizes the details. Caring people take the actions that bring pets home.
+      - generic [ref=e578]:
+        - article [ref=e579]:
+          - generic [ref=e580]:
+            - heading "Caring Community" [level=3] [ref=e581]
+            - paragraph [ref=e582]: Neighbors looking out for pets every day.
+        - article [ref=e583]:
+          - generic [ref=e584]:
+            - heading "Verified Volunteers" [level=3] [ref=e585]
+            - paragraph [ref=e586]: Trusted people supporting safe follow-up.
+        - article [ref=e587]:
+          - generic [ref=e588]:
+            - heading "Rescue Partners" [level=3] [ref=e589]
+            - paragraph [ref=e590]: Coordinated support when cases need more care.
+        - article [ref=e591]:
+          - generic [ref=e592]:
+            - heading "Make a Difference" [level=3] [ref=e593]
+            - paragraph [ref=e594]: One report can help a family find their pet.
+    - generic [ref=e598]:
+      - img [ref=e599]
+      - heading "Together, we can bring more pets home." [level=2] [ref=e601]
+      - paragraph [ref=e602]: Join a trusted community that reports sightings, supports rescues, and helps families reunite safely.
+      - generic [ref=e603]:
+        - link "Start Reporting" [ref=e604] [cursor=pointer]:
+          - /url: /report
+          - img
+          - text: Start Reporting
+        - link "Search Lost Pets" [ref=e605] [cursor=pointer]:
+          - /url: /lost-pets
+          - img
+          - text: Search Lost Pets
+        - link "Create Pet Passport" [ref=e606] [cursor=pointer]:
+          - /url: /pets/new
+          - img
+          - text: Create Pet Passport
+        - link "Join as Volunteer" [ref=e607] [cursor=pointer]:
+          - /url: /volunteer
+          - img
+          - text: Join as Volunteer
+  - contentinfo [ref=e608]:
+    - generic [ref=e609]:
+      - generic [ref=e610]:
+        - generic [ref=e611]:
+          - link "PetRadar" [ref=e612] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e613]:
+              - img [ref=e615]
+              - generic [ref=e621]: PetRadar
+          - paragraph [ref=e622]: A trusted community for pet safety, rescue support, and reunion.
+          - generic [ref=e623]:
+            - link "PetRadar community" [ref=e624] [cursor=pointer]:
+              - /url: "#community"
+              - img [ref=e625]
+            - link "PetRadar community" [ref=e630] [cursor=pointer]:
+              - /url: "#community"
+              - img [ref=e631]
+            - link "PetRadar community" [ref=e633] [cursor=pointer]:
+              - /url: "#community"
+              - img [ref=e634]
+        - generic [ref=e636]:
+          - heading "Explore" [level=3] [ref=e637]
+          - list [ref=e638]:
+            - listitem [ref=e639]:
+              - link "Map" [ref=e640] [cursor=pointer]:
+                - /url: /map
+            - listitem [ref=e641]:
+              - link "Lost Pets" [ref=e642] [cursor=pointer]:
+                - /url: /lost-pets
+            - listitem [ref=e643]:
+              - link "Report" [ref=e644] [cursor=pointer]:
+                - /url: /report
+            - listitem [ref=e645]:
+              - link "Matches" [ref=e646] [cursor=pointer]:
+                - /url: /matches
+        - generic [ref=e647]:
+          - heading "Support" [level=3] [ref=e648]
+          - list [ref=e649]:
+            - listitem [ref=e650]:
+              - link "Help Center" [ref=e651] [cursor=pointer]:
+                - /url: /safety
+            - listitem [ref=e652]:
+              - link "Safety" [ref=e653] [cursor=pointer]:
+                - /url: /safety
+            - listitem [ref=e654]:
+              - link "Notifications" [ref=e655] [cursor=pointer]:
+                - /url: /notifications
+            - listitem [ref=e656]:
+              - link "Contact" [ref=e657] [cursor=pointer]:
+                - /url: /safety
+        - generic [ref=e658]:
+          - heading "About" [level=3] [ref=e659]
+          - list [ref=e660]:
+            - listitem [ref=e661]:
+              - link "Our Mission" [ref=e662] [cursor=pointer]:
+                - /url: "#community"
+            - listitem [ref=e663]:
+              - link "How It Works" [ref=e664] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e665]:
+              - link "Community" [ref=e666] [cursor=pointer]:
+                - /url: "#community"
+            - listitem [ref=e667]:
+              - link "Rescues" [ref=e668] [cursor=pointer]:
+                - /url: /volunteer
+        - generic [ref=e669]:
+          - heading "Legal" [level=3] [ref=e670]
+          - list [ref=e671]:
+            - listitem [ref=e672]:
+              - link "Privacy Policy" [ref=e673] [cursor=pointer]:
+                - /url: /safety
+            - listitem [ref=e674]:
+              - link "Terms of Service" [ref=e675] [cursor=pointer]:
+                - /url: /safety
+            - listitem [ref=e676]:
+              - link "Accessibility" [ref=e677] [cursor=pointer]:
+                - /url: /safety
+            - listitem [ref=e678]:
+              - link "Data Safety" [ref=e679] [cursor=pointer]:
+                - /url: /safety
+        - generic [ref=e680]:
+          - heading "Get Involved" [level=3] [ref=e681]
+          - list [ref=e682]:
+            - listitem [ref=e683]:
+              - link "Volunteer" [ref=e684] [cursor=pointer]:
+                - /url: /volunteer
+            - listitem [ref=e685]:
+              - link "Rescue Partners" [ref=e686] [cursor=pointer]:
+                - /url: /volunteer
+            - listitem [ref=e687]:
+              - link "Create Passport" [ref=e688] [cursor=pointer]:
+                - /url: /pets/new
+            - listitem [ref=e689]:
+              - link "Sign Up" [ref=e690] [cursor=pointer]:
+                - /url: /register
+      - generic [ref=e691]:
+        - paragraph [ref=e692]: © 2026 PetRadar. All rights reserved.
+        - paragraph [ref=e693]:
+          - img [ref=e694]
+          - text: Privacy and animal welfare come first.

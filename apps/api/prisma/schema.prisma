@@ -1,0 +1,285 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  GUEST
+  REPORTER
+  PET_OWNER
+  VOLUNTEER
+  ADMIN
+}
+
+enum AuthProvider {
+  GOOGLE
+  LINE
+  FACEBOOK
+}
+
+enum Species {
+  DOG
+  CAT
+  OTHER
+}
+
+enum SightingStatus {
+  STRAY
+  INJURED
+  POSSIBLE_LOST
+  RESCUE_NEEDED
+  RESOLVED
+}
+
+enum VerificationStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+  DUPLICATE
+}
+
+enum Urgency {
+  LOW
+  MEDIUM
+  HIGH
+  EMERGENCY
+}
+
+enum LostPetStatus {
+  ACTIVE
+  FOUND
+  CLOSED
+}
+
+enum MatchDecision {
+  PENDING
+  CONFIRMED
+  REJECTED
+}
+
+enum RescueStatus {
+  NEW
+  ASSIGNED
+  EN_ROUTE
+  IN_CARE
+  RESOLVED
+  CLOSED
+}
+
+enum NotificationType {
+  MATCH_FOUND
+  REPORT_VERIFIED
+  RESCUE_ASSIGNED
+  STATUS_UPDATED
+}
+
+model User {
+  id                String           @id @default(uuid())
+  email             String           @unique
+  passwordHash      String?          @map("password_hash")
+  displayName       String           @map("display_name")
+  avatarUrl         String?          @map("avatar_url")
+  role              UserRole         @default(REPORTER)
+  refreshTokenHash  String?          @map("refresh_token_hash")
+  createdAt         DateTime         @default(now()) @map("created_at")
+  updatedAt         DateTime         @updatedAt @map("updated_at")
+  authAccounts      AuthAccount[]
+  authHandoffs      AuthHandoff[]
+  sightings         AnimalSighting[] @relation("SightingReporter")
+  lostPets          LostPet[]        @relation("LostPetOwner")
+  assignedCases     RescueCase[]     @relation("AssignedVolunteer")
+  internalNotes     InternalNote[]
+  notifications     Notification[]
+  auditLogs         AuditLog[]
+
+  @@map("users")
+}
+
+model AuthAccount {
+  id                String       @id @default(uuid())
+  userId            String       @map("user_id")
+  user              User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider          AuthProvider
+  providerAccountId String       @map("provider_account_id")
+  createdAt         DateTime     @default(now()) @map("created_at")
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("auth_accounts")
+}
+
+model AuthHandoff {
+  id         String    @id @default(uuid())
+  userId     String    @map("user_id")
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash  String    @unique @map("token_hash")
+  returnTo   String    @map("return_to")
+  expiresAt  DateTime  @map("expires_at")
+  consumedAt DateTime? @map("consumed_at")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  @@index([userId])
+  @@index([expiresAt])
+  @@map("auth_handoffs")
+}
+
+model AnimalSighting {
+  id                 String             @id @default(uuid())
+  reporterId         String?            @map("reporter_id")
+  reporter           User?              @relation("SightingReporter", fields: [reporterId], references: [id], onDelete: SetNull)
+  species            Species
+  color              String
+  pattern            String?
+  description        String
+  status             SightingStatus     @default(STRAY)
+  urgency            Urgency            @default(MEDIUM)
+  verificationStatus VerificationStatus @default(PENDING) @map("verification_status")
+  photoUrls          String[]           @default([]) @map("photo_urls")
+  exactLatitude      Decimal            @map("exact_latitude") @db.Decimal(9, 6)
+  exactLongitude     Decimal            @map("exact_longitude") @db.Decimal(9, 6)
+  publicLatitude     Decimal            @map("public_latitude") @db.Decimal(9, 6)
+  publicLongitude    Decimal            @map("public_longitude") @db.Decimal(9, 6)
+  exactLocation      Unsupported("geography(Point, 4326)")? @map("exact_location")
+  publicLocation     Unsupported("geography(Point, 4326)")? @map("public_location")
+  seenAt             DateTime           @map("seen_at")
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+  matchResults       MatchResult[]
+  rescueCase         RescueCase?
+
+  @@index([species])
+  @@index([status])
+  @@index([verificationStatus])
+  @@index([createdAt])
+  @@map("animal_sightings")
+}
+
+model LostPet {
+  id                 String        @id @default(uuid())
+  ownerId            String        @map("owner_id")
+  owner              User          @relation("LostPetOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  petName            String        @map("pet_name")
+  species            Species
+  color              String
+  pattern            String?
+  description        String
+  hasCollar          Boolean       @default(false) @map("has_collar")
+  photoUrls          String[]      @default([]) @map("photo_urls")
+  status             LostPetStatus @default(ACTIVE)
+  exactLatitude      Decimal       @map("exact_latitude") @db.Decimal(9, 6)
+  exactLongitude     Decimal       @map("exact_longitude") @db.Decimal(9, 6)
+  publicLatitude     Decimal       @map("public_latitude") @db.Decimal(9, 6)
+  publicLongitude    Decimal       @map("public_longitude") @db.Decimal(9, 6)
+  exactLocation      Unsupported("geography(Point, 4326)")? @map("exact_location")
+  publicLocation     Unsupported("geography(Point, 4326)")? @map("public_location")
+  lastSeenAt         DateTime      @map("last_seen_at")
+  createdAt          DateTime      @default(now()) @map("created_at")
+  updatedAt          DateTime      @updatedAt @map("updated_at")
+  matchResults       MatchResult[]
+
+  @@index([species])
+  @@index([status])
+  @@index([createdAt])
+  @@map("lost_pets")
+}
+
+model MatchResult {
+  id             String        @id @default(uuid())
+  lostPetId      String        @map("lost_pet_id")
+  lostPet        LostPet       @relation(fields: [lostPetId], references: [id], onDelete: Cascade)
+  sightingId     String        @map("sighting_id")
+  sighting       AnimalSighting @relation(fields: [sightingId], references: [id], onDelete: Cascade)
+  score          Int
+  level          String
+  reasons        String[]      @default([])
+  decision       MatchDecision @default(PENDING)
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+
+  @@unique([lostPetId, sightingId])
+  @@index([score])
+  @@index([decision])
+  @@map("match_results")
+}
+
+model RescueCase {
+  id                  String              @id @default(uuid())
+  sightingId          String              @unique @map("sighting_id")
+  sighting            AnimalSighting      @relation(fields: [sightingId], references: [id], onDelete: Cascade)
+  assignedVolunteerId String?             @map("assigned_volunteer_id")
+  assignedVolunteer   User?               @relation("AssignedVolunteer", fields: [assignedVolunteerId], references: [id], onDelete: SetNull)
+  status              RescueStatus        @default(NEW)
+  priority            Urgency             @default(MEDIUM)
+  summary             String
+  createdAt           DateTime            @default(now()) @map("created_at")
+  updatedAt           DateTime            @updatedAt @map("updated_at")
+  statusHistory       CaseStatusHistory[]
+  internalNotes       InternalNote[]
+
+  @@index([status])
+  @@index([priority])
+  @@index([createdAt])
+  @@map("rescue_cases")
+}
+
+model CaseStatusHistory {
+  id           String       @id @default(uuid())
+  rescueCaseId String       @map("rescue_case_id")
+  rescueCase   RescueCase   @relation(fields: [rescueCaseId], references: [id], onDelete: Cascade)
+  fromStatus   RescueStatus? @map("from_status")
+  toStatus     RescueStatus  @map("to_status")
+  note         String?
+  createdById  String?      @map("created_by_id")
+  createdAt    DateTime     @default(now()) @map("created_at")
+
+  @@index([rescueCaseId])
+  @@map("case_status_history")
+}
+
+model InternalNote {
+  id           String     @id @default(uuid())
+  rescueCaseId String     @map("rescue_case_id")
+  rescueCase   RescueCase @relation(fields: [rescueCaseId], references: [id], onDelete: Cascade)
+  authorId     String     @map("author_id")
+  author       User       @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  body         String
+  createdAt    DateTime   @default(now()) @map("created_at")
+
+  @@index([rescueCaseId])
+  @@index([authorId])
+  @@map("internal_notes")
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  userId    String           @map("user_id")
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      NotificationType
+  title     String
+  body      String
+  readAt    DateTime?        @map("read_at")
+  metadata  Json             @default("{}")
+  createdAt DateTime         @default(now()) @map("created_at")
+
+  @@index([userId])
+  @@index([readAt])
+  @@map("notifications")
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  actorId   String?  @map("actor_id")
+  actor     User?    @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  action    String
+  target    String
+  metadata  Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([actorId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}

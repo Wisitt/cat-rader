@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "PetRadar Reuniting hearts" [ref=e4] [cursor=pointer]:
+        - /url: /my-petradar
+        - img [ref=e6]
+        - generic [ref=e11]:
+          - paragraph [ref=e12]: PetRadar
+          - paragraph [ref=e13]: Reuniting hearts
+      - navigation [ref=e14]:
+        - link "Map" [ref=e15] [cursor=pointer]:
+          - /url: /map
+          - img [ref=e16]
+          - text: Map
+        - link "Lost Pets" [ref=e18] [cursor=pointer]:
+          - /url: /lost-pets
+          - img [ref=e19]
+          - text: Lost Pets
+        - link "Matches 3" [ref=e21] [cursor=pointer]:
+          - /url: /matches
+          - img [ref=e22]
+          - text: Matches
+          - generic [ref=e26]: "3"
+        - link "Volunteer" [ref=e27] [cursor=pointer]:
+          - /url: /volunteer
+          - img [ref=e28]
+          - text: Volunteer
+      - generic [ref=e31]:
+        - link "Report Animal" [ref=e32] [cursor=pointer]:
+          - /url: /report
+          - img [ref=e33]
+          - text: Report Animal
+        - button "Open notifications" [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+          - generic [ref=e39]: "3"
+        - button "Open profile menu" [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: "N"
+          - img [ref=e43]
+    - main [ref=e45]:
+      - generic [ref=e46]:
+        - generic:
+          - generic [ref=e48]:
+            - img [ref=e49]
+            - textbox "Search by pet, breed, color, area, or landmark..." [ref=e52]
+            - button "Open filters" [ref=e53] [cursor=pointer]:
+              - img [ref=e54]
+          - button "Near me" [ref=e55] [cursor=pointer]:
+            - img [ref=e56]
+            - generic [ref=e59]: Near me
+        - generic [ref=e60]:
+          - button "Cats" [ref=e61] [cursor=pointer]:
+            - img [ref=e62]
+            - generic [ref=e69]: Cats
+          - button "Dogs" [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+            - generic [ref=e78]: Dogs
+          - button "Other animals" [ref=e79] [cursor=pointer]:
+            - img [ref=e80]
+            - generic [ref=e86]: Other animals
+          - button "Injured" [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e90]: Injured
+          - button "Possible match" [ref=e91] [cursor=pointer]:
+            - img [ref=e92]
+            - generic [ref=e96]: Possible match
+          - button "Rescue needed" [ref=e97] [cursor=pointer]:
+            - img [ref=e98]
+            - generic [ref=e100]: Rescue needed
+          - button "Reunited" [ref=e101] [cursor=pointer]:
+            - img [ref=e102]
+            - generic [ref=e105]: Reunited
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - heading "Active cases" [level=2] [ref=e108]
+            - paragraph [ref=e109]: 8 cases found
+          - generic [ref=e110]:
+            - button "Cats 4" [ref=e111] [cursor=pointer]:
+              - img [ref=e113]
+              - generic [ref=e120]: Cats
+              - generic [ref=e121]: "4"
+            - button "Dogs 3" [ref=e122] [cursor=pointer]:
+              - img [ref=e124]
+              - generic [ref=e131]: Dogs
+              - generic [ref=e132]: "3"
+            - button "Other animals 1" [ref=e133] [cursor=pointer]:
+              - img [ref=e135]
+              - generic [ref=e141]: Other animals
+              - generic [ref=e142]: "1"
+            - button "Injured 1" [ref=e143] [cursor=pointer]:
+              - img [ref=e145]
+              - generic [ref=e147]: Injured
+              - generic [ref=e148]: "1"
+            - button "Possible match 4" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e155]: Possible match
+              - generic [ref=e156]: "4"
+            - button "Rescue needed 1" [ref=e157] [cursor=pointer]:
+              - img [ref=e159]
+              - generic [ref=e161]: Rescue needed
+              - generic [ref=e162]: "1"
+            - button "Reunited 0" [ref=e163] [cursor=pointer]:
+              - img [ref=e165]
+              - generic [ref=e168]: Reunited
+              - generic [ref=e169]: "0"
+          - button "View all cases" [ref=e170] [cursor=pointer]:
+            - text: View all cases
+            - img [ref=e171]
+        - link "Report Animal Help a pet today" [ref=e173] [cursor=pointer]:
+          - /url: /report
+          - img [ref=e175]
+          - generic [ref=e176]:
+            - generic [ref=e177]: Report Animal
+            - generic [ref=e178]: Help a pet today
+          - generic [ref=e179]:
+            - img [ref=e180]
+            - img [ref=e187]
+        - generic:
+          - generic:
+            - img
+            - text: 8 cases shown
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: 8 cases
+              - paragraph [ref=e198]: Click to highlight on map
+            - button [ref=e199] [cursor=pointer]:
+              - img [ref=e200]
+          - generic [ref=e203]:
+            - button "Orange tabby Cat Possible Lost Ari · 1h ago" [ref=e204] [cursor=pointer]:
+              - generic [ref=e206]:
+                - paragraph [ref=e207]: Orange tabby Cat
+                - generic [ref=e209]: Possible Lost
+                - paragraph [ref=e210]: Ari · 1h ago
+            - button "Golden Dog Possible Lost Chatuchak · 1h ago" [ref=e211] [cursor=pointer]:
+              - generic [ref=e213]:
+                - paragraph [ref=e214]: Golden Dog
+                - generic [ref=e216]: Possible Lost
+                - paragraph [ref=e217]: Chatuchak · 1h ago
+            - button "Black and white Cat Rescue Needed Victory Monument · 1h ago" [ref=e218] [cursor=pointer]:
+              - generic [ref=e220]:
+                - paragraph [ref=e221]: Black and white Cat
+                - generic [ref=e223]: Rescue Needed
+                - paragraph [ref=e224]: Victory Monument · 1h ago
+            - button "Brown and white Dog STRAY Lat Phrao · 15h ago" [ref=e225] [cursor=pointer]:
+              - generic [ref=e226]:
+                - img [ref=e228]
+                - generic [ref=e235]:
+                  - paragraph [ref=e236]: Brown and white Dog
+                  - generic [ref=e238]: STRAY
+                  - paragraph [ref=e239]: Lat Phrao · 15h ago
+            - button "Gray Cat Possible Lost Ratchada · 18h ago" [ref=e240] [cursor=pointer]:
+              - generic [ref=e242]:
+                - paragraph [ref=e243]: Gray Cat
+                - generic [ref=e245]: Possible Lost
+                - paragraph [ref=e246]: Ratchada · 18h ago
+            - button "White Cat Possible Lost Saphan Khwai · 21h ago" [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]:
+                - img [ref=e250]
+                - generic [ref=e257]:
+                  - paragraph [ref=e258]: White Cat
+                  - generic [ref=e260]: Possible Lost
+                  - paragraph [ref=e261]: Saphan Khwai · 21h ago
+            - button "Black Dog INJURED Bang Sue · 2d ago" [ref=e262] [cursor=pointer]:
+              - generic [ref=e263]:
+                - img [ref=e265]
+                - generic [ref=e272]:
+                  - paragraph [ref=e273]: Black Dog
+                  - generic [ref=e275]: INJURED
+                  - paragraph [ref=e276]: Bang Sue · 2d ago
+            - button "Brown Other STRAY Din Daeng · 2d ago" [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]:
+                - img [ref=e280]
+                - generic [ref=e286]:
+                  - paragraph [ref=e287]: Brown Other
+                  - generic [ref=e289]: STRAY
+                  - paragraph [ref=e290]: Din Daeng · 2d ago
+  - alert [ref=e292]
